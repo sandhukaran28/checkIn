@@ -19,6 +19,11 @@ nav {
   border-radius: 15px;
   box-shadow: 0 0 10px #000000;
 }
+@media screen and (max-width: 500px) {
+  .main {
+    width: 100% !important;
+  }
+}
 button {
   width: 200px !important;
   transition: 400ms !important;
