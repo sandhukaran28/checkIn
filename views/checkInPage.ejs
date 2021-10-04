@@ -1,0 +1,69 @@
+<%- include('./partials/header') -%> <%- include('./partials/navbar') -%>
+<div class="row m-3 mt-5">
+  <div class="col col-12 col-lg-6 d-flex justify-content-center">
+    <img class="w-75" src="/images/Hello.svg" alt="svg" />
+  </div>
+  <div class="col col-12 col-lg-6">
+    <div
+      class="
+        container
+        main
+        h-100
+        w-75
+        mt-3
+        p-5
+        d-flex
+        flex-column
+        justify-content-center
+        text-light
+      "
+    >
+      <form action="/checkInPerson" class="p-2" method="POST">
+        <div class="mb-5">
+          <label for="name" class="form-label">Name:</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="mobile" class="form-label">Mobile No:</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">+91</span>
+            <input
+              class="form-control"
+              type="tel"
+              name="mobile"
+              id="mobile"
+              aria-describedby="basic-addon1"
+              required
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          type="button"
+          class="btn btn-light btn-lg align-self-center"
+        >
+          Check In
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer') -%>

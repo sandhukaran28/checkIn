@@ -1,0 +1,35 @@
+<%- include('./partials/header') -%> <%- include('./partials/navbar') -%>
+<%-include('./partials/flash') -%>
+
+<div class="row m-3 mt-5">
+  <div class="col col-12 col-lg-6 d-flex justify-content-center">
+    <img class="w-75" src="/images/indexSvg.svg" alt="svg" />
+  </div>
+  <div class="col col-12 col-lg-6">
+    <div
+      class="
+        container
+        main
+        h-100
+        w-75
+        mt-3
+        p-5
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+        text-light
+      "
+    >
+      <h1 class="mb-3">Hey 👋</h1>
+      <button type="button" class="btn btn-light btn-lg m-4">
+        <a class="text-decoration-none" href="/checkin"><h3>Check In</h3></a>
+      </button>
+      <button type="button" class="btn btn-light btn-lg">
+        <a class="text-decoration-none" href="/checkout"><h3>Check out</h3></a>
+      </button>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer') -%>
