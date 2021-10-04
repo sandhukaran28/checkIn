@@ -1,6 +1,6 @@
 # checkIn
 
-https://checkin-web-app-v1.herokuapp.com/
+https://checkin-web-app-v1.herokuapp.com/ <br/>
 NodeJs application to keep log of check in and check out.<br/>
 Data is strored in mongoDb database.<br/>
 Email and sms is sent on checkin and checkout.<br/>
